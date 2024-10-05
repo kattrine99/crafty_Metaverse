@@ -15,7 +15,7 @@ section{
 
 .universeContainer{
     background-color: rgba(0, 0, 0, 0.6);
-    background-image: url('/Images/Hero.png');
+    background-image: url('../Images/Hero.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
