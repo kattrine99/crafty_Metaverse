@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+section{
+    height: 100vh;
+    width: 100%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #fff;
+}
+
+.universeContainer{
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('/Images/Hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px calc(20px + (140 - 20) * ((100vw - 390px) / (1920 - 390)));
+}
+.logo img{
+    width: 28px;
+    height: 28px;
+    margin: 41px  0;
+}
+.menu-icon{
+    content: url("../Images/Burger.png"); 
+    display: none;
+    cursor: pointer;
+    position: absolute;
+}
+.menu-icon.cross::before {
+    content: url("../Images/Exit.png"); 
+}
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0 45px;
+    align-items:center;
+    margin: 36px 0 41px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+}
+.nav-menu ul li a:hover{
+    color: #F4C3F5;
+}
+.mainText , .bar img{
+    margin: calc(145px + (164 - 145) * ((100vw - 375px) / (1280 - 375))) calc(19px + (86 - 19) * ((100vw - 375px) / (1280 - 375)))  calc(232px + (275 - 232) * ((100vw - 375px) / (1280 - 375)));
+    display: flex;
+    background: url('../Images/Vector.png');
+    background-repeat:no-repeat;
+    background-position:25px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    gap: 0  calc(19px + (67 - 19) * ((100vw - 375px) / (1280 - 375)));
+
+}
+.bar{
+    height: calc(240px + (400 - 240) * ((100vw - 375px) / (1280 - 375)));
+}
+.text span , .InfoText span{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: calc(21px + (16 - 21) * ((100vw - 320px) / (1280 - 320)));
+}
+.text h1{
+    font-family: 'HeliosExtC';
+    font-size: calc(18px + (33 - 18) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    width: calc(235px + (500 - 235) * ((100vw - 375px) / (1280 - 375)));
+}
+.text img{
+    width: calc(26px + (46 - 26) * ((100vw - 375px) / (1280 - 375)));
+}
+.blue{
+    width: 200px;
+    padding: 16px 24px;
+    border-radius: 6px;
+    border: none;
+    background-image: linear-gradient(to right, #7A42F4 , #4642F4);
+    
+    font-size: calc(16px + (18 - 16) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 163%;
+    color: #fff;
+    margin-top: calc(10px + (65 - 10) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.aboutUs {
+    background-image: url('../Images/aboutUs.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.aboutUsInfo{
+    width: calc(375px + (1039 - 375) * ((100vw - 375px) / (1280 - 375))); 
+    display: flex;
+    flex-direction: row;
+    background: url('../Images/Vector.png');
+    background-repeat:no-repeat;
+    background-position:25px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin: 268px 144px 204px;
+    gap: 0  calc(20px + (62 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+.aboutUsPhoto {
+    display: none;
+}
+.aboutUsInfo img{
+    height: calc(562px + (585 - 562) * ((100vw - 375px) / (1280 - 375))); 
+}
+.Info {
+    width: calc(337px + (675 - 337) * ((100vw - 375px) / (1280 - 375))); 
+}
+
+.InfoText {
+    margin-top: 48px;
+}
+
+.InfoText span {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.InfoText h2 {
+    font-family: 'HeliosExtC';
+    text-transform: uppercase;
+    font-size: calc(28px + (45 - 28) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 109%;
+    margin-bottom: 27px;
+}
+
+
+.InfoText p{
+    font-size: calc(16px + (20 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 160%;
+    width: calc(321px + (612 - 321) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(24px + (63 - 24) * ((100vw - 375px) / (1280 - 375)));
+
+}
+.chapter-container {
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+    padding: 10px 20px;
+    width: 445px;
+}
+
+.icon-line-container {
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+    flex-grow: 1; 
+}
+
+.icon-circle {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle img {
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    height: 2px; 
+    background-color: #fff; 
+    flex-grow: 1; 
+}
+.chapter-info {
+    display: flex; 
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap; 
+}
+
+.chapter-number {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.chapter-title {
+    font-size: 14px;
+}
+
+.chapter-page {
+    margin-left: auto; 
+    font-size: 16px;
+}
+
+.roadMap{
+    background-color:#090812;
+
+}
+
+/* ----------  Медиа запросы  ---------- */
+@media (max-width: 900px) {
+    .menu-icon {
+        content: url("../Images/Burger.png"); 
+        display: block;
+    }
+
+    .nav-list {
+        list-style: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../Images/Universe.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-list.open {
+        right: 0; /* Открытие меню */
+    }
+    .aboutUs{
+        background-image:none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #01001F;
+        background-size:100%;
+    }
+    .aboutUsPhoto {
+        display: block;
+        width: 100%;
+    }
+}
